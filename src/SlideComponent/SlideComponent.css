@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 2s, transform 2s;
+}
+
+.slideIn-description {
+    flex: 2;
+    padding: 20px;
+    text-align: center; /* Centering the text */
+}
+
+.slideIn-heading {
+    margin-bottom: 10px;
+}
+
+.slideIn-paragraph {
+    margin: 0;
+}
+
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
